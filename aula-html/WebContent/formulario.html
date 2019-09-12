@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario HTML</title>
+</head>
+<body>
+	<form>
+		<label for="nome">Nome: </label>
+		<input type="text" id="nome">
+		
+		<label for="sobrenome">Nome: </label>
+		<input type="text" id="sobrenome">
+		
+		<button type="submit" onclick="exibir()">Salvar</button>
+		
+	</form>
+	<script>function exibir() 
+	{
+		alert("Bem vindo, "
+				+ document.getElementById("nome").value + " "
+				+ document.getElementById("sobrenome").value)
+	}
+	
+	</script>
+</body>
+</html>
